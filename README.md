@@ -123,7 +123,7 @@ Total: 9  Passed: 9  Failed: 0
 
 ## Benchmarks
 
-Measured on a **Raspberry Pi 5** (Cortex-A76 @ 2.4 GHz) running QNX 8.0 (`aarch64le`), built with `-march=armv8-a+crypto -O3`, 3-second `speed_*` runs:
+Measured on a **Raspberry Pi 5** (Cortex-A76 @ 2.4 GHz) running QNX 8.0 (`aarch64le`)
 
 | Algorithm | Operation | Time (µs) | Ops / sec |
 |---|---|---:|---:|
@@ -134,7 +134,6 @@ Measured on a **Raspberry Pi 5** (Cortex-A76 @ 2.4 GHz) running QNX 8.0 (`aarch6
 |                | sign    | 887.9 | 1,127  |
 |                | verify  | 196.2 | 5,097  |
 
-Runtime CPU dispatch is disabled (`OQS_DIST_BUILD=OFF`), so these numbers reflect the generic-ARMv8 reference implementation. ML-DSA comes within ~5 % of the same algorithm built natively on Linux on identical hardware.
 
 ## Supported architectures
 
