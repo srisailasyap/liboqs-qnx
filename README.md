@@ -1,6 +1,6 @@
 # liboqs port to QNX
 
-This is a port of the Open Quantum Safe project's [liboqs](https://github.com/open-quantum-safe/liboqs) <img src="https://avatars.githubusercontent.com/u/31419478?s=48&v=4" width=24 /> — a C library of post-quantum cryptographic algorithms — to **QNX Neutrino RTOS 8.0**. Only CPU-based reference implementations are built (no OpenSSL or hardware-accelerated backends).
+This is a port of the Open Quantum Safe project's [liboqs](https://github.com/open-quantum-safe/liboqs)  — a C library of post-quantum cryptographic algorithms — to **QNX Neutrino RTOS 8.0**. Only CPU-based reference implementations are built (no OpenSSL or hardware-accelerated backends).
 
 With liboqs on QNX, NIST-standardized and candidate post-quantum algorithms run on safety-critical, automotive, and embedded QNX targets:
 
