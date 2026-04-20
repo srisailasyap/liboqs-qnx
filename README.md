@@ -115,24 +115,20 @@ chmod +x run-tests.sh
 ./run-tests.sh
 ```
 
-The script prints a `pass`/`fail` line per algorithm and ends with a summary:
 
 ```
+test_kem ML-KEM-512: passed
+test_kem ML-KEM-768: passed
+test_kem ML-KEM-1024: passed
+test_sig ML-DSA-44: passed
+test_sig ML-DSA-65: passed
+test_sig ML-DSA-87: passed
+test_sig Falcon-512: passed
+test_sig Falcon-1024: passed
+test_sig SPHINCS+-SHA2-128s-simple: passed
 Total: 9  Passed: 9  Failed: 0
 ```
 
-## Benchmarks
-
-Measured on a **Raspberry Pi 5** (Cortex-A76 @ 2.4 GHz) running QNX 8.0 (`aarch64le`)
-
-| Algorithm | Operation | Time (µs) | Ops / sec |
-|---|---|---:|---:|
-| **ML-KEM-768** | keygen | 74.1  | 13,503 |
-|                | encaps | 76.3  | 13,098 |
-|                | decaps | 61.4  | 16,285 |
-| **ML-DSA-65**  | keypair | 225.6 | 4,433  |
-|                | sign    | 887.9 | 1,127  |
-|                | verify  | 196.2 | 5,097  |
 
 
 ## Supported architectures
