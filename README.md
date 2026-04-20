@@ -60,9 +60,6 @@ source ~/qnx800/qnxsdp-env.sh
 QNX_PROJECT_ROOT="$(pwd)/liboqs" make -C build-files/ports/liboqs install -j4
 ```
 
-Library and headers install into `$QNX_TARGET/{aarch64le,x86_64}/usr/local/`.
-Test/example/benchmark binaries live under `nto-{aarch64-le,x86_64-o}/build/tests/`.
-
 ## Run on the target
 
 Transfer the library and the binaries you need to the QNX target:
@@ -88,15 +85,11 @@ ssh qnxuser@$TARGET_HOST
 cd /tmp
 export LD_LIBRARY_PATH=/tmp:$LD_LIBRARY_PATH
 
-# Minimal smoke test
+# run examples
 ./example_kem ML-KEM-768
 ./example_sig ML-DSA-65
-
-# Correctness tests
 ./test_kem ML-KEM-768
 ./test_sig ML-DSA-65
-
-# 3-second throughput benchmarks
 ./speed_kem --duration 3 ML-KEM-768
 ./speed_sig --duration 3 ML-DSA-65
 ```
