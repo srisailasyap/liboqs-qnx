@@ -7,14 +7,6 @@ With liboqs on QNX, NIST-standardized and candidate post-quantum algorithms run 
 - **KEMs** — ML-KEM (Kyber), Classic McEliece, BIKE, FrodoKEM, NTRU, sntrup761, HQC
 - **Signatures** — ML-DSA (Dilithium), Falcon, SPHINCS+, SLH-DSA, MAYO, CROSS, UOV, SNOVA
 
-The latest release was tested with **liboqs `v0.15.0`** on a Raspberry Pi 5 (QNX 8.0, `aarch64le`) and an x86_64 QNX target (QEMU). All NIST-standardized algorithms pass `test_kem` / `test_sig`.
-
-| | |
-|---|---|
-| **liboqs tag** | `v0.15.0` |
-| **Source fork** (QNX patches applied) | [`srisailasyap/liboqs @ qnx-0.15.0`](https://github.com/srisailasyap/liboqs/tree/qnx-0.15.0) |
-| **QNX SDP** | 8.0 |
-| **Tested targets** | Raspberry Pi 5 (`nto-aarch64-le`), `nto-x86_64-o` (QEMU) |
 
 > **NOTE:** QNX ports are only supported from a Linux host operating system.
 
@@ -126,8 +118,8 @@ Total: 9  Passed: 9  Failed: 0
 
 ## Supported architectures
 
-- `aarch64le` — Raspberry Pi 5
-- `x86_64` — QNX QEMU
+- `aarch64le` 
+- `x86_64` 
 
 ## License
 
